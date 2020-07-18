@@ -4,30 +4,48 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-  public float speed;                //Floating point variable to store the player's movement speed.
+  public float speed = 10f;
+  public Vector3 targetPos;
+  public bool isMoving;
+  const int MOUSE = 0;
+  // Use this for initialization1
+  void Start () {
 
-  private Rigidbody rb;        //Store a reference to the Rigidbody2D component required to use 2D Physics.
-
-  // Use this for initialization
-  void Start()
-  {
-      //Get and store a reference to the Rigidbody2D component so that we can access it.
-      rb = GetComponent<Rigidbody> ();
+      targetPos = transform.position;
+      isMoving = false;
   }
 
-  //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
-  void Update()
+  // Update is called once per frame
+  void Update () {
+
+      if(Input.GetMouseButton(MOUSE))
+      {
+          SetTarggetPosition();
+      }
+      if(isMoving)
+      {
+          MoveObject();
+      }
+  }
+  void SetTarggetPosition()
   {
-      //Store the current horizontal input in the float moveHorizontal.
-      float moveHorizontal = Input.GetAxis ("Horizontal");
+      Plane plane = new Plane(Vector3.up,transform.position);
+      Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+      float point = 0f;
 
-      //Store the current vertical input in the float moveVertical.
-      float moveVertical = Input.GetAxis ("Vertical");
+      if(plane.Raycast(ray, out point))
+          targetPos = ray.GetPoint(point);
 
-      //Use the two store floats to create a new Vector2 variable movement.
-      Vector3 movement = new Vector3 (moveHorizontal, 0, moveVertical);
+      isMoving = true;
+  }
+  void MoveObject()
+  {
+      transform.LookAt(targetPos);
+      transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
-      //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
-      rb.AddForce (movement * speed);
+      if (transform.position == targetPos)
+          isMoving = false;
+      Debug.DrawLine(transform.position,targetPos,Color.red);
+
   }
 }
