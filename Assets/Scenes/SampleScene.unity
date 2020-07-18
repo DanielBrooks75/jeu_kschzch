@@ -340,5 +340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Star
       objectReference: {fileID: 0}
+    - target: {fileID: 6712226445068720014, guid: 588418c7a1dc64540ae6af8899d61392,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 588418c7a1dc64540ae6af8899d61392, type: 3}

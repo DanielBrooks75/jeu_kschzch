@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
   }
 
   // Update is called once per frame
-  void Update () {
+  void FixedUpdate () {
 
       if(Input.GetMouseButton(MOUSE))
       {
@@ -40,8 +40,15 @@ public class PlayerMove : MonoBehaviour
   }
   void MoveObject()
   {
+
+      //Check neighboors
+      Collider[] hitColliders = Physics.OverlapSphere(transform.position,10f);
+      //Debug.Log("nb of colliders :" + hitColliders.Length);
+      float actualSpeed = speed * hitColliders.Length;
+
+
       transform.LookAt(targetPos);
-      transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+      transform.position = Vector3.MoveTowards(transform.position, targetPos, actualSpeed * Time.fixedDeltaTime);
 
       if (transform.position == targetPos)
           isMoving = false;
