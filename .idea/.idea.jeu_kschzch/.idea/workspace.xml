@@ -20,10 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="755b513d-a750-4cd6-9fa8-d61bf54fbb9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/etoile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/etoile.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/.idea.jeu_kschzch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jeu_kschzch/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene_Profiles.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +40,79 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CircularOrbitMoveTrue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/36E8D28F-3BD2-49E4-AA4F-67238B512D2B/2d/e4724746/Time.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CircularOrbitMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/36E8D28F-3BD2-49E4-AA4F-67238B512D2B/0b/4daa14a2/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/CircularOrbitMove.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/36E8D28F-3BD2-49E4-AA4F-67238B512D2B/0b/4daa14a2/GameObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CircularOrbitMoveTrue.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1erlcHzeNL53be3JXCNLGJEpPaD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -50,7 +128,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.22857143" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -63,6 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595087676674</updated>
       <workItem from="1595087700047" duration="5364000" />
+      <workItem from="1595153647524" duration="8949000" />
     </task>
     <servers />
   </component>
@@ -81,9 +161,111 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="172" y="34" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595156499301">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state x="172" y="34" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1295.744@65.24.1295.744" timestamp="1595156499301" />
+    <state width="657" height="545" key="DebuggerActiveHint" timestamp="1595155523530">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="657" height="545" key="DebuggerActiveHint/65.24.1295.744@65.24.1295.744" timestamp="1595155523530" />
+    <state width="1239" height="260" key="GridCell.Tab.0.bottom" timestamp="1595162346490">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.0.bottom/65.24.1295.744@65.24.1295.744" timestamp="1595162346490" />
+    <state width="1239" height="260" key="GridCell.Tab.0.center" timestamp="1595162346490">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.0.center/65.24.1295.744@65.24.1295.744" timestamp="1595162346490" />
+    <state width="1239" height="260" key="GridCell.Tab.0.left" timestamp="1595162346490">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.0.left/65.24.1295.744@65.24.1295.744" timestamp="1595162346490" />
+    <state width="1239" height="260" key="GridCell.Tab.0.right" timestamp="1595162346490">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.0.right/65.24.1295.744@65.24.1295.744" timestamp="1595162346490" />
+    <state width="1239" height="260" key="GridCell.Tab.1.bottom" timestamp="1595162353389">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.1.bottom/65.24.1295.744@65.24.1295.744" timestamp="1595162353389" />
+    <state width="1239" height="260" key="GridCell.Tab.1.center" timestamp="1595162353389">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.1.center/65.24.1295.744@65.24.1295.744" timestamp="1595162353389" />
+    <state width="1239" height="260" key="GridCell.Tab.1.left" timestamp="1595162353388">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.1.left/65.24.1295.744@65.24.1295.744" timestamp="1595162353388" />
+    <state width="1239" height="260" key="GridCell.Tab.1.right" timestamp="1595162353389">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.1.right/65.24.1295.744@65.24.1295.744" timestamp="1595162353389" />
+    <state width="1239" height="260" key="GridCell.Tab.2.bottom" timestamp="1595162346407">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.2.bottom/65.24.1295.744@65.24.1295.744" timestamp="1595162346407" />
+    <state width="1239" height="260" key="GridCell.Tab.2.center" timestamp="1595162346406">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.2.center/65.24.1295.744@65.24.1295.744" timestamp="1595162346406" />
+    <state width="1239" height="260" key="GridCell.Tab.2.left" timestamp="1595162346406">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.2.left/65.24.1295.744@65.24.1295.744" timestamp="1595162346406" />
+    <state width="1239" height="260" key="GridCell.Tab.2.right" timestamp="1595162346407">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.2.right/65.24.1295.744@65.24.1295.744" timestamp="1595162346407" />
+    <state width="1239" height="260" key="GridCell.Tab.3.bottom" timestamp="1595162346408">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.3.bottom/65.24.1295.744@65.24.1295.744" timestamp="1595162346408" />
+    <state width="1239" height="260" key="GridCell.Tab.3.center" timestamp="1595162346407">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.3.center/65.24.1295.744@65.24.1295.744" timestamp="1595162346407" />
+    <state width="1239" height="260" key="GridCell.Tab.3.left" timestamp="1595162346407">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.3.left/65.24.1295.744@65.24.1295.744" timestamp="1595162346407" />
+    <state width="1239" height="260" key="GridCell.Tab.3.right" timestamp="1595162346408">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="1239" height="260" key="GridCell.Tab.3.right/65.24.1295.744@65.24.1295.744" timestamp="1595162346408" />
+    <state x="82" y="24" key="SettingsEditor" timestamp="1595156924594">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state x="82" y="24" key="SettingsEditor/65.24.1295.744@65.24.1295.744" timestamp="1595156924594" />
+    <state width="648" height="386" key="XDebugger.FullValuePopup" timestamp="1595156649043">
+      <screen x="65" y="24" width="1295" height="744" />
+    </state>
+    <state width="648" height="386" key="XDebugger.FullValuePopup/65.24.1295.744@65.24.1295.744" timestamp="1595156649043" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CircularOrbitMoveTrue.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CircularOrbitMoveTrue.cs" initialLine="40">
+            <startOffsets>
+              <option value="1026" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1125" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
