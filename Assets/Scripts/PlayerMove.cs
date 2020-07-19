@@ -20,11 +20,16 @@ public class PlayerMove : MonoBehaviour
 
       if(Input.GetMouseButton(MOUSE))
       {
+          GetComponent<CircularOrbitMove>().enabled = false;
           SetTargetPosition();
       }
-      if(isMoving)
+      if(isMoving && !GetComponent<CircularOrbitMove>().enabled)
       {
           MoveObject();
+      }
+      if(!isMoving && !GetComponent<CircularOrbitMove>().enabled)
+      {
+          TryToOrbit();
       }
   }
   void SetTargetPosition()
@@ -42,7 +47,7 @@ public class PlayerMove : MonoBehaviour
   {
 
       //Check neighboors
-      Collider[] hitColliders = Physics.OverlapSphere(transform.position,10f);
+      Collider[] hitColliders = Physics.OverlapSphere(transform.position,15f);
       //Debug.Log("nb of colliders :" + hitColliders.Length);
       float actualSpeed = speed * hitColliders.Length;
 
@@ -54,5 +59,21 @@ public class PlayerMove : MonoBehaviour
           isMoving = false;
       Debug.DrawLine(transform.position,targetPos,Color.red);
 
+  }
+  void TryToOrbit()
+  {
+      Collider[] hitColliders = Physics.OverlapSphere(transform.position,10f);
+      if(hitColliders.Length > 1)
+      {
+        GameObject grav = hitColliders[0].gameObject;
+        if (grav.name != "PlayerNew")
+        {
+          Debug.Log("grav " + grav.name);
+          GetComponent<CircularOrbitMove>().gravObj = grav;
+          //GetComponent<CircularOrbitMove>().enabled = true;
+        }
+        //CircularOrbitMove.gravObj = hitColliders[0].GameObject;
+        //CircularOrbitMove.enabled = true;
+      }
   }
 }
