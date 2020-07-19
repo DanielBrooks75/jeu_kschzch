@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
           GameObject star = (GameObject)Instantiate(starPrefab, new Vector3( starDist * Mathf.Cos(starTheta), 0f, starDist * Mathf.Sin(starTheta)), Quaternion.identity);
           float scaleAdd = Random.Range(-0.2f, 0.2f);
           star.transform.localScale += new Vector3 (scaleAdd, scaleAdd, scaleAdd);
-          star.GetComponent<CircularOrbitMove>().gravObj = hole;
+          star.GetComponent<CircularOrbitMove>().orbitCenter = hole;
           star.GetComponent<CircularOrbitMove>().speed = Random.Range(1f, 10f);
           star.GetComponent<CircularOrbitMove>().SetTargetPosition();
           Color randomColor = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
           Color randomColor = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));
           planet.GetComponent<Renderer>().material.SetColor("_EmissionColor", randomColor);
           planet.transform.localScale += new Vector3 (scaleAdd, scaleAdd, scaleAdd);
-          planet.GetComponent<CircularOrbitMove>().gravObj = hole;
+          planet.GetComponent<CircularOrbitMove>().orbitCenter = hole;
           planet.GetComponent<CircularOrbitMove>().speed = Random.Range(1f, 10f);
           planet.GetComponent<CircularOrbitMove>().SetTargetPosition();
         }

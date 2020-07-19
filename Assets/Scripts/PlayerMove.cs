@@ -68,7 +68,7 @@ public class PlayerMove : MonoBehaviour
         if (grav.name != "PlayerNew")
         {
           Debug.Log("grav " + grav.name);
-          GetComponent<CircularOrbitMove>().gravObj = grav;
+          /*GetComponent<CircularOrbitMove>().orbit_center = grav;*/
           //GetComponent<CircularOrbitMove>().enabled = true;
         }
         //CircularOrbitMove.gravObj = hitColliders[0].GameObject;
