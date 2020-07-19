@@ -20,14 +20,14 @@ public class PlayerMove : MonoBehaviour
 
       if(Input.GetMouseButton(MOUSE))
       {
-          SetTarggetPosition();
+          SetTargetPosition();
       }
       if(isMoving)
       {
           MoveObject();
       }
   }
-  void SetTarggetPosition()
+  void SetTargetPosition()
   {
       Plane plane = new Plane(Vector3.up,transform.position);
       Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
