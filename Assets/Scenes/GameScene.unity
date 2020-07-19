@@ -383,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 1452075548180541651, guid: 9a1410f798c9410408c910a8ab9c230f,
         type: 3}
       propertyPath: starsNb
-      value: 94
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 1452075548180541651, guid: 9a1410f798c9410408c910a8ab9c230f,
         type: 3}

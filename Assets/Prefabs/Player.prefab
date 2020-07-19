@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80532c4e244424e70812e63411c230e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
   targetPos: {x: 0, y: 0, z: 0}
   isMoving: 0
 --- !u!114 &5152146899863162013
@@ -158,7 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  gravObj: {fileID: 0}
+  theta: 0
+  orbitCenter: {fileID: 0}
 --- !u!54 &8037788302903843612
 Rigidbody:
   m_ObjectHideFlags: 0

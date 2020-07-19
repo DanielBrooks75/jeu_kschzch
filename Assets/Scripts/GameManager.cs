@@ -82,9 +82,9 @@ public class GameManager : MonoBehaviour
           float planetTheta = Random.Range(0f, 2 * Mathf.PI);
           float planetDist = Random.Range(15f, 80f);
           GameObject planet = (GameObject)Instantiate(planetPrefab, new Vector3( planetDist * Mathf.Cos(planetTheta), 0f, planetDist * Mathf.Sin(planetTheta)), Quaternion.identity);
-          float scaleAdd = Random.Range(-1f, 1f);
           Color randomColor = new Color(Random.Range(0F,1F), Random.Range(0, 1F), Random.Range(0, 1F));
-          planet.GetComponent<Renderer>().material.SetColor("_EmissionColor", randomColor);
+          planet.GetComponent<Renderer>().material.SetColor("_Color", randomColor);
+          float scaleAdd = Random.Range(-1f, 1f);
           planet.transform.localScale += new Vector3 (scaleAdd, scaleAdd, scaleAdd);
           planet.GetComponent<CircularOrbitMove>().orbitCenter = hole;
           planet.GetComponent<CircularOrbitMove>().speed = Random.Range(1f, 10f);
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
         planets = GameObject.FindGameObjectsWithTag("Planet");
 
         //Generate Player
-        player = (GameObject)Instantiate(playerPrefab, new Vector3(20f, 0f, -10f), Quaternion.identity);
+        player = (GameObject)Instantiate(playerPrefab, new Vector3(70f, 0f, -10f), Quaternion.identity);
         player.GetComponent<PlayerMove>().targetPos = player.transform.position;
         player.GetComponent<PlayerMove>().isMoving = false;
     }
