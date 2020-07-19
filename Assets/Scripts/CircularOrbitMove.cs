@@ -4,7 +4,7 @@ public class CircularOrbitMove : MonoBehaviour
 {
     [Range (-10f,10f)]
     public float speed = 8f;
-    public string orbitCenterName = "Void";
+    /*public string orbitCenterName = "Hole";*/
     public float theta;
     
     public GameObject orbitCenter;
@@ -13,7 +13,7 @@ public class CircularOrbitMove : MonoBehaviour
     
     public void SetTargetPosition()
     {
-        orbitCenter = GameObject.Find(orbitCenterName);
+        orbitCenter = GameObject.FindGameObjectWithTag("Hole");
         orbitCenterPos = orbitCenter.transform.position;
         dist = Vector3.Distance(orbitCenterPos, transform.position);
         theta = OrbitHandler.getAngleFromCoords(transform.position.x, transform.position.z, dist);
