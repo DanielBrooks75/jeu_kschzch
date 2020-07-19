@@ -121,59 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &273705519
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 273705521}
-  - component: {fileID: 273705520}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &273705520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273705519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36985bb30fadd6844912090b6ca29f5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starsNb: 100
-  planetsNb: 9
-  holePrefab: {fileID: 8015106811283042122, guid: 5d44f1c4157a2094589a7edad52d838a,
-    type: 3}
-  playerPrefab: {fileID: 8037788302903843615, guid: d3d1eae7b2bf4364b99c1e3f7b292583,
-    type: 3}
-  starPrefab: {fileID: 6712226445068720012, guid: 588418c7a1dc64540ae6af8899d61392,
-    type: 3}
-  planetPrefab: {fileID: 4643819300429517196, guid: c294603ab9fead64c9fabcde97022abf,
-    type: 3}
---- !u!4 &273705521
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273705519}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,3 +313,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1452075548443712227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1452075548180541644, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541650, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541651, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: starsNb
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452075548180541651, guid: 9a1410f798c9410408c910a8ab9c230f,
+        type: 3}
+      propertyPath: planetsNb
+      value: 29
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a1410f798c9410408c910a8ab9c230f, type: 3}

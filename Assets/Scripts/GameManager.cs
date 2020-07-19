@@ -70,7 +70,8 @@ public class GameManager : MonoBehaviour
           star.GetComponent<CircularOrbitMove>().gravObj = hole;
           star.GetComponent<CircularOrbitMove>().speed = Random.Range(1f, 10f);
           star.GetComponent<CircularOrbitMove>().SetTargetPosition();
-          star.GetComponent<Renderer>().material.color = Random.ColorHSV();
+          Color randomColor = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
+          star.GetComponent<Renderer>().material.SetColor("_EmissionColor", randomColor * 100f);
         }
 
         stars = GameObject.FindGameObjectsWithTag("Star");
@@ -96,5 +97,11 @@ public class GameManager : MonoBehaviour
         player = (GameObject)Instantiate(playerPrefab, new Vector3(20f, 0f, -10f), Quaternion.identity);
         player.GetComponent<PlayerMove>().targetPos = player.transform.position;
         player.GetComponent<PlayerMove>().isMoving = false;
+    }
+
+    void TryToOrbit()
+    {
+
+
     }
 }
