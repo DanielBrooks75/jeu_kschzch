@@ -20,16 +20,15 @@ public class PlayerMove : MonoBehaviour
 
       if(Input.GetMouseButton(MOUSE))
       {
-          GetComponent<CircularOrbitMove>().enabled = false;
           SetTargetPosition();
       }
-      if(isMoving && !GetComponent<CircularOrbitMove>().enabled)
+      if(isMoving)
       {
           MoveObject();
       }
-      if(!isMoving && !GetComponent<CircularOrbitMove>().enabled)
+      if(!isMoving)
       {
-          TryToOrbit();
+          //TryToOrbit();
       }
   }
   void SetTargetPosition()

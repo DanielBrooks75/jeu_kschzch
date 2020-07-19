@@ -31,14 +31,16 @@ public class CircularOrbitMove : MonoBehaviour
 
       xSegCoords = new float[segments];
       zSegCoords = new float[segments];
- 
+
       float dist = Vector3.Distance(gravPos, transform.position);
+      float angle = Vector3.Angle(gravPos - transform.position, transform.right);
+      Debug.Log("Angle " + Vector3.Angle(gravPos - transform.position, transform.right));
       float angleOffset = Mathf.Acos(transform.position.x / dist);
 
       for(int i = 0; i < segments; i++ )
       {
-        xSegCoords[i] = dist * Mathf.Cos( rotationDir * i * 2 * Mathf.PI/segments + angleOffset);
-        zSegCoords[i] = dist * Mathf.Sin( rotationDir * i * 2 * Mathf.PI/segments + angleOffset);
+        xSegCoords[i] = dist * Mathf.Cos( rotationDir * i * 2 * Mathf.PI/segments + angle);
+        zSegCoords[i] = dist * Mathf.Sin( rotationDir * i * 2 * Mathf.PI/segments + angle);
       }
 
 
