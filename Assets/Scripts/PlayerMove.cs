@@ -7,31 +7,31 @@ public class PlayerMove : MonoBehaviour
   public float speed = 10f;
   public Vector3 targetPos;
   public bool isMoving;
-  const int MOUSE = 0;
+  //const int MOUSE = 0;
   // Use this for initialization1
-  void Start () {
-
-      targetPos = transform.position;
-      isMoving = false;
-  }
+  // void Start () {
+  //
+  //     targetPos = transform.position;
+  //     isMoving = false;
+  // }
 
   // Update is called once per frame
-  void FixedUpdate () {
-
-      if(Input.GetMouseButton(MOUSE))
-      {
-          SetTargetPosition();
-      }
-      if(isMoving)
-      {
-          MoveObject();
-      }
-      if(!isMoving)
-      {
-          //TryToOrbit();
-      }
-  }
-  void SetTargetPosition()
+  // void FixedUpdate () {
+  //
+  //     if(Input.GetMouseButton(MOUSE))
+  //     {
+  //         SetTargetPosition();
+  //     }
+  //     if(isMoving)
+  //     {
+  //         MoveObject();
+  //     }
+  //     if(!isMoving)
+  //     {
+  //         //TryToOrbit();
+  //     }
+  // }
+  public void SetTargetPosition()
   {
       Plane plane = new Plane(Vector3.up,transform.position);
       Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -42,7 +42,7 @@ public class PlayerMove : MonoBehaviour
 
       isMoving = true;
   }
-  void MoveObject()
+  public void MoveObject()
   {
 
       //Check neighboors

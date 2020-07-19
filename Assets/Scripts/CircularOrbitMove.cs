@@ -4,32 +4,28 @@ using UnityEngine;
 
 public class CircularOrbitMove : MonoBehaviour
 {
-    [Range (1f,10f)]
-    public float speed = 8f;
+    [Range (-10f,10f)]
+    public float speed;
     public GameObject gravObj;
 
     private Vector3 gravPos;
     private float theta;
 
-    void Start()
+    public void SetTargetPosition()
     {
-      if (gravObj == null)
-        gravObj = GameObject.Find("Void");
-
       if(gravObj != null)
+      {
         gravPos = gravObj.transform.position;
-
-      float dist = Vector3.Distance(gravPos, transform.position);
-      float x = transform.position.x;
-      float z = transform.position.z;
-      theta = Mathf.Sign(Mathf.Asin(z / dist)) * Mathf.Acos(x / dist);
-
+        float dist = Vector3.Distance(gravPos, transform.position);
+        float x = transform.position.x;
+        float z = transform.position.z;
+        theta = Mathf.Sign(Mathf.Asin(z / dist)) * Mathf.Acos(x / dist);
+      }
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void MoveObject()
     {
-
       float dist = Vector3.Distance(gravPos, transform.position);
       theta = speed * Time.fixedDeltaTime / dist + theta;
       float x_new = dist * Mathf.Cos(theta);
