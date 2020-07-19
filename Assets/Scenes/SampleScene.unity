@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36985bb30fadd6844912090b6ca29f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 7
-  planets: 7
+  starsNb: 100
+  planetsNb: 9
   holePrefab: {fileID: 8015106811283042122, guid: 5d44f1c4157a2094589a7edad52d838a,
     type: 3}
   playerPrefab: {fileID: 8037788302903843615, guid: d3d1eae7b2bf4364b99c1e3f7b292583,
