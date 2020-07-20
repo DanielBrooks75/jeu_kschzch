@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+  [Range (0f, 100f)]
   public float speed = 10f;
-  public Vector3 targetPos;
+  private Vector3 targetPos;
   public bool isMoving;
   //const int MOUSE = 0;
   // Use this for initialization1
@@ -51,28 +52,34 @@ public class PlayerMove : MonoBehaviour
       float actualSpeed = speed * hitColliders.Length;
 
 
-      transform.LookAt(targetPos);
+      transform.LookAt(targetPos, Vector3.up);
       transform.position = Vector3.MoveTowards(transform.position, targetPos, actualSpeed * Time.fixedDeltaTime);
 
       if (transform.position == targetPos)
           isMoving = false;
       Debug.DrawLine(transform.position,targetPos,Color.red);
 
+      GameObject hole = GameObject.FindGameObjectsWithTag("Hole")[0];
+      // Vector2 holePosAng = new Vector2 (holePos[0], holePos[2]);
+      // Debug.Log("PosH :" + holePosAng + " PosP :" + new Vector2 (transform.position.x, transform.position.z) + " frow:" + transform.forward);
+      // Debug.Log("hole.right:"+hole.transform.right + " right:" + transform.right);
+      // Debug.Log("Angle From Hole in °:" + Vector3.Angle(hole.transform.right, transform.position));
+
   }
-  void TryToOrbit()
-  {
-      Collider[] hitColliders = Physics.OverlapSphere(transform.position,10f);
-      if(hitColliders.Length > 1)
-      {
-        GameObject grav = hitColliders[0].gameObject;
-        if (grav.name != "PlayerNew")
-        {
-          Debug.Log("grav " + grav.name);
-          /*GetComponent<CircularOrbitMove>().orbit_center = grav;*/
-          //GetComponent<CircularOrbitMove>().enabled = true;
-        }
-        //CircularOrbitMove.gravObj = hitColliders[0].GameObject;
-        //CircularOrbitMove.enabled = true;
-      }
-  }
+  // void TryToOrbit()
+  // {
+  //     Collider[] hitColliders = Physics.OverlapSphere(transform.position,10f);
+  //     if(hitColliders.Length > 1)
+  //     {
+  //       GameObject grav = hitColliders[0].gameObject;
+  //       if (grav.name != "PlayerNew")
+  //       {
+  //         Debug.Log("grav " + grav.name);
+  //         /*GetComponent<CircularOrbitMove>().orbit_center = grav;*/
+  //         //GetComponent<CircularOrbitMove>().enabled = true;
+  //       }
+  //       //CircularOrbitMove.gravObj = hitColliders[0].GameObject;
+  //       //CircularOrbitMove.enabled = true;
+  //     }
+  // }
 }

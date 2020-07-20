@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
+    [Range (0, 100)]
     private int starsNb = 7;
     [SerializeField]
+    [Range (0, 10)]
     private int planetsNb = 7;
 
     public GameObject holePrefab;
@@ -32,12 +34,12 @@ public class GameManager : MonoBehaviour
     {
         foreach (GameObject star in stars)
         {
-            star.GetComponent<CircularOrbitMove>().MoveObject();
+            star.GetComponent<CircularOrbitMove>().MoveObjectAround(hole);
         }
 
         foreach (GameObject planet in planets)
         {
-            planet.GetComponent<CircularOrbitMove>().MoveObject();
+            planet.GetComponent<CircularOrbitMove>().MoveObjectAround(hole);
         }
 
         if(Input.GetMouseButton(MOUSE))
@@ -50,11 +52,14 @@ public class GameManager : MonoBehaviour
             }
         if(!player.GetComponent<PlayerMove>().isMoving)
             {
-                //TryToOrbit();
+                player.GetComponent<CircularOrbitMove>().MoveObjectAround(FindClosestObjectTo(player));
             }
+            Debug.DrawLine(player.transform.position,player.transform.position+player.transform.right*100f,Color.green);
+            Debug.DrawLine(player.transform.position,player.transform.position+player.transform.up*100f,Color.blue);
+
     }
 
-    void GenerateUniverse()
+    private void GenerateUniverse()
     {
         //Generate Hole
         hole = (GameObject) Instantiate(holePrefab, new Vector3 (0f, 0f, 0f), Quaternion.identity);
@@ -67,9 +72,9 @@ public class GameManager : MonoBehaviour
           GameObject star = (GameObject)Instantiate(starPrefab, new Vector3( starDist * Mathf.Cos(starTheta), 0f, starDist * Mathf.Sin(starTheta)), Quaternion.identity);
           float scaleAdd = Random.Range(-0.2f, 0.2f);
           star.transform.localScale += new Vector3 (scaleAdd, scaleAdd, scaleAdd);
-          star.GetComponent<CircularOrbitMove>().orbitCenter = hole;
+          //star.GetComponent<CircularOrbitMove>().orbitCenter = hole;
           star.GetComponent<CircularOrbitMove>().speed = Random.Range(1f, 10f);
-          star.GetComponent<CircularOrbitMove>().SetTargetPosition();
+          //star.GetComponent<CircularOrbitMove>().SetTargetPosition();
           Color randomColor = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f), 1f);
           star.GetComponent<Renderer>().material.SetColor("_EmissionColor", randomColor * 100f);
         }
@@ -86,22 +91,42 @@ public class GameManager : MonoBehaviour
           planet.GetComponent<Renderer>().material.SetColor("_Color", randomColor);
           float scaleAdd = Random.Range(-1f, 1f);
           planet.transform.localScale += new Vector3 (scaleAdd, scaleAdd, scaleAdd);
-          planet.GetComponent<CircularOrbitMove>().orbitCenter = hole;
+          //planet.GetComponent<CircularOrbitMove>().orbitCenter = hole;
           planet.GetComponent<CircularOrbitMove>().speed = Random.Range(1f, 10f);
-          planet.GetComponent<CircularOrbitMove>().SetTargetPosition();
+          //planet.GetComponent<CircularOrbitMove>().SetTargetPosition();
         }
 
         planets = GameObject.FindGameObjectsWithTag("Planet");
 
         //Generate Player
         player = (GameObject)Instantiate(playerPrefab, new Vector3(70f, 0f, -10f), Quaternion.identity);
-        player.GetComponent<PlayerMove>().targetPos = player.transform.position;
+        //player.GetComponent<PlayerMove>().targetPos = player.transform.position;
         player.GetComponent<PlayerMove>().isMoving = false;
     }
 
-    void TryToOrbit()
+    private GameObject FindClosestObjectTo(GameObject sourceObj)
     {
-
-
+        GameObject result = hole;
+        float dist = Vector3.Distance(hole.transform.position, sourceObj.transform.position);
+        float distTest = dist;
+        foreach(GameObject planet in planets)
+        {
+          distTest = Vector3.Distance(planet.transform.position, sourceObj.transform.position);
+          if (dist > distTest)
+          {
+            dist = distTest;
+            result = planet;
+          }
+        }
+        foreach(GameObject star in stars)
+        {
+          distTest = Vector3.Distance(star.transform.position, sourceObj.transform.position);
+          if (dist > distTest)
+          {
+            dist = distTest;
+            result = star;
+          }
+        }
+        return result;
     }
 }
