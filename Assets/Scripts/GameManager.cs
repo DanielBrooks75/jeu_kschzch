@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         planets = GameObject.FindGameObjectsWithTag("Planet");
 
         //Generate Player
-        player = (GameObject)Instantiate(playerPrefab, new Vector3(70f, 0f, -10f), Quaternion.identity);
+        player = (GameObject)Instantiate(playerPrefab, new Vector3(0f, 0f, -70f), Quaternion.identity);
         //player.GetComponent<PlayerMove>().targetPos = player.transform.position;
         player.GetComponent<PlayerMove>().isMoving = false;
     }
